@@ -1,0 +1,291 @@
+@import 'reset';
+
+body {
+	background: #000;
+}
+
+.wrapper {
+	position: relative;
+	margin: 0 auto;
+	width: 1024px;
+}
+
+.header {
+	height: 380px;
+	background-image: url(../assets/the-urban-landscape.png);
+	background-size: cover;
+	background-position: top center;
+  width: 100%;
+  .nav-tabs {
+    li {
+      text-align: center;
+      width: 50%;
+      float: left;
+      margin-bottom: -1px;
+      a {
+        color: #000;
+        background-color: #FFF;
+      }
+      &.active {
+        a {
+          color: #FFF;
+          background-color: #000;
+        }
+      }
+    }
+  }
+}
+
+h1 {
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+	letter-spacing: 3.89px;
+	padding: 89px 0 96px;
+}
+
+.selectStyle {
+	margin: 20px auto;
+	width: 452px;
+	text-align: center;
+	background: url(../assets/icons_down.png) no-repeat 415px center;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 3px;
+}
+
+.selectZone {
+	height: 48px;
+	width: 452px;
+	font-size: 18px;
+	background-color: transparent;
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	padding: 0 9.5px;
+	cursor: pointer;
+	border: 3px solid #FFF;
+}
+
+#selectLocationId {
+  display: none;
+}
+
+.content {
+	background: #FFF;
+	position: relative;
+	width: 100%;
+}
+
+.popularArea {
+	position: relative;
+	top: -30px;
+	margin: 0 auto;
+	width: 800px;
+	background: #FFF;
+	border-radius: 5px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  p {
+    padding: 20px 0 14px 26px;
+    font-size: 18px;
+  }
+}
+
+.popularList {
+	z-index: 1;
+  margin-left: 51px;
+  li {
+    float: left;
+    margin: 14px 23px 18px 0px;
+    border-radius: 5px;
+    a {
+      display: block;
+      text-decoration: none;
+      color: #FFF;
+      padding: 11px 34px;
+      font-size: 20px;
+      :hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.popularList li:nth-child(1) {
+	background: #8A82CC;
+}
+
+.popularList li:nth-child(2) {
+	background: #FFA782;
+}
+
+.popularList li:nth-child(3) {
+	background: #F5D105;
+}
+
+.popularList li:nth-child(4) {
+	background: #559AC8;
+}
+
+.separate {
+	width: 900px;
+	margin: 0 auto;
+  padding-bottom: 65px;
+  hr {
+    float: left;
+    border: 1px #559AC8;
+    border-style: none none dashed;
+    margin: 13px 0;
+    width: 434px;
+  }
+  .dropdownIcon {
+    position: relative;
+    float: left;
+    background-size: contain;
+    background-position: center center;
+    border: 2px solid #559AC8;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+  }
+  .dropdownIcon::after {
+    position: absolute;
+    content: '▼';
+    top: 4px;
+    left: 4px;
+    color: #559AC8;
+  }
+}
+
+.clearfix {
+	clear: both;
+}
+
+.content h2 {
+	color: #8A82CC;
+	font-size: 36px;
+	text-align: center;
+}
+
+.siteList {
+	float: left;
+  padding: 24px 32px;
+  li {
+    float: left;
+    width: 464px;
+    margin: 0 8px 36px;
+    background: #FFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+.sitePic {
+	position: relative;
+	background-image: url(http://khh.travel/FileArtPic.ashx?id=705&w=1280&h=960);
+	width: 464px;
+	height: 155px;
+	background-size: cover;
+  background-position: center center;
+  p {
+    position: absolute;
+    left: 22px;
+    bottom: 14px;
+    font-size: 24px;
+    color: #FFF;
+  }
+}
+
+.siteInfo {
+	position: relative;
+  padding: 10px;
+  p {
+    font-size: 16px;
+    line-height: 20px;
+    img {
+      vertical-align: middle;
+      padding: 6px 10px;
+    }
+  }
+}
+
+.siteInfo p:nth-child(1) img {
+	width: 18px;
+	height: 18px;
+}
+
+.siteInfo p:nth-child(2) img {
+	width: 16px;
+	height: 20px;
+}
+
+.siteInfo p:nth-child(3) img {
+	width: 12px;
+	height: 20px;
+}
+
+.siteInfo p:nth-child(4) {
+	position: absolute;
+	right: 24px;
+	bottom: 19px;
+}
+
+.siteInfo p:nth-child(4) img {
+	width: 20px;
+	height: 20px;
+}
+
+.sitePic em {
+	position: absolute;
+	right: 24px;
+	bottom: 14px;
+	font-size: 16px;
+	color: #FFF;
+}
+
+.pagination {
+	width: 900px;
+	margin: 0 auto;
+	height: 24px;
+	text-align: center;
+  padding: 49px 12px 44px;
+  li {
+    display: inline-block;
+    a {
+      color: #4A4A4A;
+      display: block;
+      font-size: 14px;
+      padding: 12px;
+      text-decoration: none;
+      :hover {
+        color: #559AC8;
+        cursor: pointer;
+      }
+      :active {
+        color: #559AC8;
+      }
+    }
+  }
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.mapStyle {
+  height: 400px;
+  width: 800px;
+  margin: 50px auto;
+}
+
+.footer {
+	text-align: center;
+	height: 90px;
+  background-color: #559AC8;
+  h2 {
+    color: #FFF;
+    padding: 24px 0 15px;
+  }
+  p {
+    color: #FFD366;
+  }
+}

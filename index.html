@@ -4,14 +4,52 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>高雄旅遊資訊</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/all.css">
 </head>
 <body>
 	<div class="wrapper">
 		<div class="header">
 			<h1>高雄旅遊資訊</h1>
+
+			<ul class="nav nav-tabs">
+				<li class="siteInfoTab active"><a href="#">旅遊資訊列表</a></li>
+				<li class="siteLocationTab"><a href="#">區域景點位置</a></li>
+			</ul>
+
 			<div class="selectStyle">
 				<select id="selectZoneId" class="selectZone">
+					<option>- - 請選擇行政區 - -</option>
+					<option>三民區</option>
+					<option>內門區</option>
+					<option>美濃區</option>
+					<option>大樹區</option>
+					<option>小港區</option>
+					<option>六龜區</option>
+					<option>仁武區</option>
+					<option>左營區</option>
+					<option>田寮區</option>
+					<option>永安區</option>
+					<option>甲仙區</option>
+					<option>鼓山區</option>
+					<option>杉林區</option>
+					<option>那瑪夏</option>
+					<option>岡山區</option>
+					<option>高雄市</option>
+					<option>前鎮區</option>
+					<option>新興區</option>
+					<option>苓雅區</option>
+					<option>茂林區</option>
+					<option>茄定區</option>
+					<option>梓官區</option>
+					<option>旗津區</option>
+					<option>桃源區</option>
+					<option>楠梓區</option>
+					<option>前金區</option>
+					<option>鳳山區</option>
+				</select>
+
+				<select id="selectLocationId" class="selectZone">
 					<option>- - 請選擇行政區 - -</option>
 					<option>三民區</option>
 					<option>內門區</option>
@@ -64,8 +102,12 @@
 
 			<h2 id="zoneTitleId"></h2>
 
-			<ul class="siteList"></ul>
-			
+			<ul class="siteList" id="siteListId"></ul>
+
+			 <div class="mapStyle"> 
+				<div id="map"></div>
+			 </div> 
+
 			<div class="clearfix"></div>
 		</div>
 
@@ -73,10 +115,9 @@
 			<h2>高雄旅遊網</h2>
 			<p>資料來源：高雄市政府</p>
 		</div>
-			
 	</div>
-	<div class="message"></div>
 	
 	<script src="js/all.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEgtLazdW3LhtBiHX7aB5zvyLd6ZjSM0Q&callback=initMap"></script>
 </body>
 </html>
